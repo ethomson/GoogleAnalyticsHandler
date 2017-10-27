@@ -1,3 +1,22 @@
+Google Analytics Handler for ASP
+================================
+
+An ASP handler that reports request information to Google Analytics.
+
+Since Google Analytics is operated by the client, embedded as JavaScript
+in HTML, it will only track HTML requests.  By adding this Handler in
+front of non-HTML files, you can send the request information directly
+from the server, as part of delivering the content.
+
+This allows you to use Google Analytics to track other requests, like
+media downloads (audio and video), plain text files, or XML (including
+RSS and Atom).
+
+You can configure this handler in an on-premises IIS installation, or
+inside an Azure Web App.
+
+Instructions
+------------
 
 1. Add the handler to your web application.  Simply add the
    `GoogleAnalyticsHandler.dll` to the `bin` directory of your web app.
