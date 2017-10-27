@@ -69,7 +69,7 @@ namespace GoogleAnalyticsHandler
             NameValueCollection settings = ConfigurationManager.AppSettings;
 
             string contentType = MimeMapping.GetMimeMapping(request.Url.Segments.Last());
-            string localPath = settings.Get("file") ?? request.Path;
+            string localPath = settings.Get("file") ?? request.PhysicalPath;
 
             if (contentType == null)
             {
