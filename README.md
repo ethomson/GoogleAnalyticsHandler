@@ -30,7 +30,12 @@ Instructions
        </appSettings>
      </configuration>
 
-   Or for Azure Web Apps, you can configure this in the Azure Portal.
+   You can also set this as a connection string, which is useful in case
+   your `appSetting`s are not inherited in a way that you would like,
+   particularly if you are using the location-based redirect appSetting
+   configuration described below.
+
+   For Azure Web Apps, you can configure this in the Azure Portal.
 
 3. Configure the handler for whatever path(s) you want to report to
    Google Analytics.  For example, to configure all `rss.xml` requests
